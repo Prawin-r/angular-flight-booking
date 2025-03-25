@@ -1,0 +1,65 @@
+<div class="support-wrapper">
+  <div class="header">
+    <h1>Help Center</h1>
+    <p>Everything you need to know about our services and support.</p>
+  </div>
+
+  <!-- Main Content Row -->
+  <div class="content-row">
+    <!-- Contact Information (Left Side) -->
+    <div class="contact-info">
+      <h2>Contact Us</h2>
+      <h5>Email: support&#64;jetway.com</h5>
+      <h5>Phone: +1 800-123-4567</h5>
+      <h5>Address: 123 Airport Road, New York, USA</h5>
+    </div>
+
+    <!-- Frequently Asked Questions (Right Side) -->
+    <div class="faq-section">
+      <h2>FAQs</h2>
+      <div class="faq-item">
+        <h3>How can I change my booking?</h3>
+        <p>You can modify your booking by visiting the <strong>Manage Trips</strong> section.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I cancel a booking?</h3>
+        <p>To cancel a booking, go to the <strong>Manage Trips</strong> page and click the cancel button.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What payment methods are accepted?</h3>
+        <p>We accept major credit cards, debit cards, and online payments.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Support Form (Below Both Sections) -->
+  <div class="support-form">
+    <h2>Submit a Request</h2>
+    <form (submit)="onSubmit($event)">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Your Name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Your Email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" rows="4" placeholder="Describe your issue" required></textarea>
+
+      <button type="submit">Submit</button>
+
+      <p class="success-message" *ngIf="showSuccessMessage">Message submitted successfully!</p>
+    </form>
+  </div>
+</div>
+<!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+      <p>&copy; 2025 Jet Way. All rights reserved.</p>
+    </div>
+  </footer>

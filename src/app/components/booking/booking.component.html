@@ -1,0 +1,57 @@
+<div class="container">
+  <h2>Booking Form</h2>
+
+  <form (ngSubmit)="onSubmit()">
+    <!-- Flight Details Section -->
+    <div *ngIf="selectedFlight" class="flight-details">
+      <div><strong>Airline  :</strong> {{ selectedFlight.airline }}</div>
+      <div><strong>From     :</strong> {{ selectedFlight.origin }}</div>
+      <div><strong>To       :</strong> {{ selectedFlight.destination }}</div>
+      <div><strong>Date     :</strong> {{ selectedFlight.date }}</div>
+      <div><strong>Time     :</strong> {{ selectedFlight.time }}</div>
+      <div><strong>Price    :</strong> ₹{{ selectedFlight.price }}</div>
+    </div>
+
+    <!-- User Input Fields -->
+    <div class="form-group">
+      <label class="form-label">Name:</label>
+      <input
+        type="text"
+        [(ngModel)]="name"
+        name="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      >
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Email:</label>
+      <input
+        type="email"
+        [(ngModel)]="email"
+        name="email"
+        class="form-control"
+        placeholder="Enter your email"
+        required
+      >
+    </div>
+
+    <!-- Submit Button -->
+    <div class="text-center">
+      <button type="submit" class="btn btn-success px-5">Confirm Booking</button>
+    </div>
+  </form>
+</div>
+<!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+      <p>&copy; 2025 Jet Way. All rights reserved.</p>
+    </div>
+  </footer>

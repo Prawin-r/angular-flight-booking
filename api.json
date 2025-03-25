@@ -1,0 +1,185 @@
+{
+  "flights": [
+    {
+      "id": 1,
+      "airline": "Air India",
+      "origin": "Delhi",
+      "destination": "Mumbai",
+      "date": "2025-03-23",
+      "time": "10:00 AM",
+      "price": 4500
+    },
+    {
+      "id": 2,
+      "airline": "IndiGo",
+      "origin": "Bangalore",
+      "destination": "Chennai",
+      "date": "2025-03-23",
+      "time": "1:00 PM",
+      "price": 3500
+    },
+    {
+      "id": 3,
+      "airline": "SpiceJet",
+      "origin": "Kolkata",
+      "destination": "Delhi",
+      "date": "2025-03-23",
+      "time": "11:30 AM",
+      "price": 4000
+    },
+    {
+      "id": 4,
+      "airline": "GoAir",
+      "origin": "Pune",
+      "destination": "Hyderabad",
+      "date": "2025-03-23",
+      "time": "2:00 PM",
+      "price": 3200
+    },
+    {
+      "id": 5,
+      "airline": "Vistara",
+      "origin": "Mumbai",
+      "destination": "Goa",
+      "date": "2025-03-23",
+      "time": "9:00 AM",
+      "price": 5000
+    },
+    {
+      "id": 6,
+      "airline": "AirAsia",
+      "origin": "Chennai",
+      "destination": "Bangalore",
+      "date": "2025-03-23",
+      "time": "12:30 PM",
+      "price": 3400
+    },
+    {
+      "id": 7,
+      "airline": "Jet Airways",
+      "origin": "Delhi",
+      "destination": "Kolkata",
+      "date": "2025-03-23",
+      "time": "3:30 PM",
+      "price": 4700
+    },
+    {
+      "id": 8,
+      "airline": "Akasa Air",
+      "origin": "Mumbai",
+      "destination": "Ahmedabad",
+      "date": "2025-03-23",
+      "time": "5:00 PM",
+      "price": 2800
+    },
+    {
+      "id": 9,
+      "airline": "Alliance Air",
+      "origin": "Bangalore",
+      "destination": "Pune",
+      "date": "2025-03-23",
+      "time": "6:45 PM",
+      "price": 3900
+    },
+    {
+      "id": 10,
+      "airline": "TruJet",
+      "origin": "Hyderabad",
+      "destination": "Chennai",
+      "date": "2025-03-23",
+      "time": "8:00 PM",
+      "price": 3500
+    },
+    {
+      "id": 11,
+      "airline": "IndiGo",
+      "origin": "Delhi",
+      "destination": "Lucknow",
+      "date": "2025-03-23",
+      "time": "4:00 PM",
+      "price": 3700
+    },
+    {
+      "id": 12,
+      "airline": "Air India",
+      "origin": "Mumbai",
+      "destination": "Delhi",
+      "date": "2025-03-23",
+      "time": "5:30 PM",
+      "price": 4600
+    },
+    {
+      "id": 13,
+      "airline": "IndiGo",
+      "origin": "Chennai",
+      "destination": "Hyderabad",
+      "date": "2025-03-23",
+      "time": "9:30 AM",
+      "price": 3300
+    },
+    {
+      "id": 14,
+      "airline": "SpiceJet",
+      "origin": "Chennai",
+      "destination": "Mumbai",
+      "date": "2025-03-23",
+      "time": "7:45 AM",
+      "price": 4200
+    },
+    {
+      "id": 15,
+      "airline": "AirAsia",
+      "origin": "Chennai",
+      "destination": "Kolkata",
+      "date": "2025-03-23",
+      "time": "11:00 AM",
+      "price": 3600
+    },
+    {
+      "id": 16,
+      "airline": "Vistara",
+      "origin": "Chennai",
+      "destination": "Bangalore",
+      "date": "2025-03-23",
+      "time": "10:15 AM",
+      "price": 3500
+    },
+    {
+      "id": 17,
+      "airline": "Jet Airways",
+      "origin": "Mumbai",
+      "destination": "Chennai",
+      "date": "2025-03-23",
+      "time": "2:00 PM",
+      "price": 4600
+    },
+    {
+      "id": 18,
+      "airline": "GoAir",
+      "origin": "Chennai",
+      "destination": "Pune",
+      "date": "2025-03-23",
+      "time": "1:00 PM",
+      "price": 3800
+    },
+    {
+      "id": 19,
+      "airline": "Akasa Air",
+      "origin": "Chennai",
+      "destination": "Delhi",
+      "date": "2025-03-23",
+      "time": "6:00 AM",
+      "price": 4700
+    },
+    {
+      "id": 20,
+      "airline": "Air India",
+      "origin": "Chennai",
+      "destination": "Goa",
+      "date": "2025-03-23",
+      "time": "4:30 PM",
+      "price": 4900
+    }
+  ],
+  "bookings": []
+}

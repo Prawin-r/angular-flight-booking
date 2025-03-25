@@ -1,0 +1,52 @@
+<!-- Filters Section -->
+<div class="filter-container">
+  <!-- Time Filter -->
+  <div class="time-filter">
+    <label>Time:</label>
+    <select [(ngModel)]="selectedTime">
+      <option value="">All Times</option>
+      <option value="morning">Morning</option>
+      <option value="afternoon">Afternoon</option>
+      <option value="evening">Evening</option>
+      <option value="night">Night</option>
+    </select>
+  </div>
+
+  <!-- Origin and Destination Filters -->
+  <div class="location-filter">
+    <label>Origin:</label>
+    <input type="text" [(ngModel)]="originFilter" placeholder="Origin" />
+
+    <!-- Swap Button -->
+    <button (click)="swapLocations()">⇄</button>
+
+    <label>Destination:</label>
+    <input type="text" [(ngModel)]="destinationFilter" placeholder="Destination" />
+  </div>
+  <!-- Price Filter -->
+  <div class="price-filter">
+    <label>Price:</label>
+    <input type="range" [(ngModel)]="maxPrice" min="1000" max="10000" step="100" />
+    <span>₹{{ maxPrice }}</span>
+  </div>
+</div>
+
+<!-- Flights Listing -->
+<div *ngFor="let flight of (flights | flightFilter:originFilter:destinationFilter:maxPrice | flightTime:selectedTime)" class="flight-card">
+  <h3>{{ flight.airline | capitalize }}</h3>
+  <p>From: {{ flight.origin | capitalize }} - To: {{ flight.destination | capitalize }}</p>
+  <p>Date: {{ flight.date }} | Time: {{ flight.time }} | Price: ₹{{ flight.price }}</p>
+  <button (click)="bookFlight(flight)">Book Now</button>
+</div>
+<!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+      <p>&copy; 2025 Jet Way. All rights reserved.</p>
+    </div>
+  </footer>

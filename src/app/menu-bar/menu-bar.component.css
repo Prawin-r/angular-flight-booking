@@ -1,0 +1,67 @@
+/* 🌟 General Navbar Styling */
+.nav-style {
+    position: fixed;   /* Makes the navbar fixed at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #01143d; /* JetBlue-like Dark Blue */
+    padding: 10px 30px;
+    z-index: 1000;      /* Ensures it stays above other content */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Title Styling */
+.page-title {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+}
+
+/* Navbar Buttons Styling */
+.btn-nav {
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 6px 12px;
+    position: relative;
+}
+.btn-nav::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px; /* Thickness of the underline */
+    background-color: #00a1e4; /* Color of the underline */
+    transform: scaleX(0); /* Initially hidden */
+    transform-origin: bottom right; /* Makes the underline appear from the right when scaling */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.btn-nav:hover::after {
+    transform: scaleX(1); /* Underline is shown on hover */
+    transform-origin: bottom left; /* Makes the underline appear from the left when scaling */
+}
+
+/* Login Button Styling */
+.btn-login {
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    border: none;
+    transition: color 0.3s;
+    padding: 6px 12px;
+}
+
+.btn-login:hover {
+    color: #00a1e4;
+}
+
+/* Make sure the Login button is positioned to the right */
+.login-btn-container {
+    margin-left: auto; /* Pushes the login button to the far right */
+}

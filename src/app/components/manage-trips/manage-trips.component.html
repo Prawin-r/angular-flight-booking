@@ -1,0 +1,48 @@
+<div class="container mt-5">
+  <div class="card p-4 shadow-sm">
+    <h2 class="text-center text-primary mb-4 ">Manage Trips</h2>
+
+    <div *ngIf="bookings.length === 0" class="alert alert-info">
+      No trips booked yet.
+    </div>
+
+    <div
+      *ngFor="let booking of bookings; let i = index"
+      class="card mb-3 border-primary"
+    >
+      <div class="card-body">
+        <h3>Flight Details</h3>
+        <p><strong>Airline:</strong> {{ booking.flight.airline }}</p>
+        <p>
+          <strong>From:</strong> {{ booking.flight.origin }} |
+          <strong>To:</strong> {{ booking.flight.destination }}
+        </p>
+        <p>
+          <strong>Date:</strong> {{ booking.flight.date }} |
+          <strong>Time:</strong> {{ booking.flight.time }}
+        </p>
+        <p><strong>Price:</strong> ₹{{ booking.flight.price }}</p>
+
+        <h3>User Details</h3>
+        <p><strong>Name:</strong> {{ booking.name }}</p>
+        <p><strong>Email:</strong> {{ booking.email }}</p>
+
+        <button class="btn btn-danger" (click)="clearBooking(i)">
+          Cancel Booking
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+      <p>&copy; 2025 Jet Way. All rights reserved.</p>
+    </div>
+  </footer>

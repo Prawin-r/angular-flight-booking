@@ -1,0 +1,36 @@
+<div class="login-container">
+  <div class="login-card shadow">
+    <h2 class="text-center mb-4">Sign In</h2>
+
+    <div class="form-group mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input 
+        type="email" 
+        id="email" 
+        class="form-control" 
+        [(ngModel)]="email" 
+        placeholder="Enter your email"
+      >
+    </div>
+
+    <div class="form-group mb-4">
+      <label for="password" class="form-label">Password</label>
+      <input 
+        type="password" 
+        id="password" 
+        class="form-control" 
+        [(ngModel)]="password" 
+        placeholder="Enter your password"
+      >
+    </div>
+
+    <button 
+      class="btn btn-primary w-100 mb-3" 
+      (click)="login()"
+    >
+      Sign In
+    </button>
+    
+    
+  </div>
+</div>

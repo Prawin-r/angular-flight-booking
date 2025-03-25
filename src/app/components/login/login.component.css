@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-color: #002D72;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.login-container {
+     /* Local Path */
+    background-size: cover;
+     background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffiles.123freevectors.com%2Fwp-content%2Foriginal%2F132092-black-and-blue-geometric-abstract-background-vector-illustration.jpg&f=1&nofb=1&ipt=44a9a8ae35ab6d1f16e33506461011ea182f39630dd61473b236e1fed2b63649&ipo=images');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh; /* Make sure it covers the entire screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 400px;
+}
+
+h2 {
+    color: #0033A0; /* JetBlue Blue */
+    font-weight: bold;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+.form-control {
+    border-radius: 6px;
+    border: 1px solid #D1D5DB;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 51, 160, 0.25);
+}
+
+.btn-primary {
+    background-color: #0033A0; 
+    border: none;
+    border-radius: 6px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.forgot-password {
+    color: #0033A0;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
