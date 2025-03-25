@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { catchError, Observable, tap } from 'rxjs';
+import { catchError, Observable, map, Observable, of, tap} from 'rxjs';
 import { Flight } from '../models/flight.model';
 
 @Injectable({
@@ -11,12 +11,15 @@ export class FlightService {
 
   constructor(private http: HttpClient) {}
 
-  getFlights(): Observable<Flight[]> {
-    return this.http.get<Flight[]>(this.apiUrl).pipe(
-      tap((data) => console.log('Fetched flights:', data)),
+   getFlights(): Observable<Flight[]> {
+    return this.http.get<{ flights: Flight[] }>(this.apiUrl).pipe(
+      tap((data) => {
+        console.log('Fetched flights:', data);
+      }),
+      map((data) => (Array.isArray(data) ? data : data.flights || [])), // ✅ Ensure it's always an array
       catchError((error) => {
         console.error('Error fetching flights:', error);
-        throw error; // rethrow error for handling in the component
+        return of([]); // Return an empty array if there's an error
       })
     );
   }
