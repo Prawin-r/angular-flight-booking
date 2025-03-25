@@ -7,7 +7,7 @@ import { Flight } from '../models/flight.model';
   providedIn: 'root',
 })
 export class FlightService {
-  private apiUrl = 'http://localhost:4500/flights'; // ✅ Corrected path
+  private apiUrl = 'https://gist.githubusercontent.com/Prawin-r/a80c7a98e2d53ceed3e3ed1144e119f0/raw/bd0e76d9fdcca5a0ca0ddb4b76a1b63fc6534929/api.json'; // ✅ Corrected path
 
   constructor(private http: HttpClient) {}
 
