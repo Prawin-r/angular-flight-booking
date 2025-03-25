@@ -4,14 +4,14 @@ import { Flight } from '../../models/flight.model';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common'; // Import this
 import { FormsModule } from '@angular/forms';
-import { CapitalizePipe } from '/angular_project/flight-booking-angular-app/src/app/pipes/capitalize.pipe';
+import { CapitalizePipe } from '../../pipes/capitalize.pipe';
 import { FlightFilterPipe } from '../../pipes/flight-filter.pipe';
 import { FlightTimePipe } from '../../pipes/flight-time.pipe';
 
 @Component({
   selector: 'app-flights',
   standalone: true,
-  imports: [CommonModule, FlightFilterPipe, FlightTimePipe, CapitalizePipe,FormsModule], // Add this
+  imports: [CommonModule, FlightFilterPipe, FlightTimePipe, CapitalizePipe, FormsModule], // Add this
   templateUrl: './flights.component.html',
   styleUrls: ['./flights.component.css'],
 })
